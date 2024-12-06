@@ -1,0 +1,507 @@
+## Java code for calculator using switch statement 
+
+import java.util.Scanner;
+
+ class Practice_set {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int number=sc.nextInt();
+        System.out.print("Enter the other number:");
+        int number2=sc.nextInt();
+        System.out.print("Select the operator:");
+        char operator=sc.next().charAt(0);
+        switch(operator){
+            case '+':
+                System.out.print("value of "+number+" and "+number2+"="+(number+number2));
+                break;
+            case 'X':
+                System.out.println("value of "+number+" and "+number2+"="+(number*number2));
+                break;
+            case '/':
+                System.out.println("value of "+number+" and "+number2+"="+(number/number2));
+                break;
+            case '-':
+                System.out.println("value of "+number+" and "+number2+"="+(number-number2));
+                break;
+            default:
+                System.out.println("Entered Invalid Arithmetic operator!");
+        }
+    }
+}
+
+## Printing * pattern of type
+*****
+*   *
+*   *
+*   *
+*   *
+*****
+is
+
+import java.util.Scanner;
+
+ class Practice_set {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number of Rows:");
+        int rows=sc.nextInt();
+        System.out.println("Enter the number of Columns:");
+        int m=sc.nextInt();
+        int a=1;
+        while(a<=rows){
+            int b=1;
+            while(b<=m){
+                if(a==1||a==rows||b==1||b==m){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+                b++;
+            }
+            System.out.println();
+            a++;
+        }
+
+    }
+}
+
+### print star pattern of type :-
+   *
+  **
+ +++
+****
+import java.util.Scanner;
+
+ class Practice_set {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number of Rows:");
+        int rows=sc.nextInt();
+//        System.out.println("Enter the number of Columns:");
+//        int m=sc.nextInt();
+        int a=1;
+        while(a<=rows){
+            int b=1;
+            while(b<=rows-a){
+                System.out.print(" ");
+                b++;
+
+            }
+            int k=1;
+            while(k<=a){
+                System.out.print("*");
+                k++;
+            }
+            System.out.println();
+            a++;
+        }
+
+    }
+}
+
+### Printing the pattern of 
+1
+10
+101
+1010
+10101
+
+import java.util.Scanner;
+
+ class Practice_set {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number of Rows:");
+       int rows=sc.nextInt();
+       int c=1;
+       for(int i=1;i<=rows;i++){
+           for(int j=1;j<=i;j++){
+              if((i+j)%2==0){
+                  System.out.print("1");
+              }else{
+                  System.out.print("0");
+              }
+
+           }
+           System.out.println();
+       }
+
+    }
+}
+
+### Star Patter of :-
+*      *
+**    **
+***  ***
+********
+***  ***
+**    **
+*      *
+code is
+
+import java.util.Scanner;
+
+ class Practice_set {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number of Rows:");
+       int rows=sc.nextInt();
+       int a=1;
+      for(int i=1;i<=rows;i++){
+          for(int j=1;j<=i;j++){
+              System.out.print("*");
+
+          }
+          for(int j=1;j<=(2*(rows-i));j++){
+              System.out.print(" ");
+          }
+          for(int j=1;j<=i;j++){
+              System.out.print("*");
+          }
+
+          System.out.println();
+
+
+
+      }
+      for(int i=rows-1;i>=1;i--){
+          for(int j=1;j<=i;j++){
+              System.out.print("*");
+          }
+          for(int j=1;j<=(2*(rows-i));j++){
+              System.out.print(" ");
+          }
+          for(int j=1;j<=i;j++){
+              System.out.print("*");
+          }
+          System.out.println();
+      }
+
+    }
+}
+
+###   Pattern of type
+   1
+  2 2
+ 3 3 3
+4 4 4 4
+ 3 3 3
+  2 2
+   1
+
+
+
+import java.util.Scanner;
+
+ class Practice_set {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number of Rows:");
+       int rows=sc.nextInt();
+       for(int i=1;i<=rows;i++){
+           for(int j=1;j<=(rows-i);j++){
+               System.out.print(" ");
+           }
+           for(int j=1;j<=i;j++){
+               System.out.print(i+" ");
+           }
+           System.out.println();
+       }
+       for(int i=rows-1;i>=1;i--){
+           for(int j=1;j<=(rows-i);j++){
+               System.out.print(" ");
+           }
+           for(int j=1;j<=i;j++){
+               System.out.print(i+" ");
+           }
+           System.out.println();
+       }
+
+    }
+}
+
+### Patter of 
+   1
+  212
+ 32123
+4321234
+
+
+import java.util.Scanner;
+
+ class Practice_set {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number of Rows:");
+       int rows=sc.nextInt();
+       for(int i=1;i<=rows;i++){
+           for(int j=1;j<=(rows-i);j++){
+               System.out.print(" ");
+           }
+           for(int j=i;j>=1;j--){
+               System.out.print(j);
+           }
+           for(int j=2;j<=i;j++){
+               System.out.print(j);
+
+           }
+           System.out.println();
+       }
+
+
+    }
+}
+
+
+####  CODE And out Put:=
+
+   1
+  212
+ 32123
+4321234
+ 32123
+  212
+   1
+
+import java.util.Scanner;
+
+ class Practice_set {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number of Rows:");
+       int rows=sc.nextInt();
+       for(int i=1;i<=rows;i++){
+           for(int j=1;j<=(rows-i);j++){
+               System.out.print(" ");
+           }
+           for(int j=i;j>=1;j--){
+               System.out.print(j);
+           }
+           for(int j=2;j<=i;j++){
+               System.out.print(j);
+
+           }
+           System.out.println();
+       }
+       for(int i=rows-1;i>=1;i--){
+           for(int j=1;j<=(rows-i);j++){
+               System.out.print(" ");
+           }
+           for(int j=i;j>=1;j--){
+               System.out.print(j);
+           }
+           for(int j=2;j<=i;j++){
+               System.out.print(j);
+
+           }
+           System.out.println();
+       }
+
+
+    }
+}
+
+
+###
+public void greet(String name) {  // "name" is a parameter
+    System.out.println("Hello, " + name);
+}
+
+// ...
+
+greet("Alice"); // "Alice" is an argument
+
+### For new line code
+
+import java.util.Scanner;
+
+ class Practice_set {
+
+         public static void main(String args[]){
+             Scanner scanner = new Scanner(System.in);
+
+             System.out.print("Enter the number of elements: ");
+             int n = scanner.nextInt(); // Number of elements in the array
+             scanner.nextLine(); // Consume the newline
+
+             String[] dynamicArgs = new String[n]; // Create an array for strings
+
+             System.out.println("Enter the elements:");
+             for (int i = 0; i < n; i++) {
+                 dynamicArgs[i] = scanner.nextLine(); // Populate the array
+             }
+
+             // Display the array
+             System.out.println("You entered:");
+             for (int i = 0; i < dynamicArgs.length; i++) {
+                 System.out.println("dynamicArgs[" + i + "]: " + dynamicArgs[i]);
+             }
+
+         }
+     }
+
+### Checking the entered number whether it is the power of 2 or not:-
+
+import java.util.Scanner;
+import java.lang.Math;
+ class Practice_set {
+         public static void main(String args[]){
+             System.out.println("Enter the number :");
+             Scanner sc=new Scanner(System.in);
+             int n=sc.nextInt();
+             if((n>0&&(n&(n-1))==0)){
+                 System.out.println(n+" is the power of 2");
+             }else{
+                 System.out.println(n+" is not the power of 2");
+             }
+         }
+     }
+
+### Numbers of 1s in the entered number is code is:-
+
+import java.util.Scanner;
+import java.lang.Math;
+ class Practice_set {
+         public static void main(String args[]){
+             System.out.println("Enter the number :");
+             Scanner sc=new Scanner(System.in);
+             int n=sc.nextInt();
+             int count=0;
+             while(n!=0){
+                 count+=(n&1);
+                 n=n>>1;
+             }
+             System.out.println(count);
+         }
+     }
+
+#### Decimal to binary representation and binary to decimal representation function code :-
+
+import java.util.Scanner;
+import java.lang.Math;
+ class Practice_set {
+     public static void binarep(int num,int n){
+         int i=0;
+         int ans=0;
+         while(n!=0){
+             int bit=n&1;
+             ans=(bit*((int) Math.pow(10, i)))+ans;
+             n=n/2;
+             i++;
+
+         }
+         System.out.println(num+" bit representation is "+ans);
+     }
+public static void decimalrep(int binary,int bin){
+         int i=0;
+         int ans=0;
+         while(binary!=0){
+             int digit=binary%10;
+             if(digit==1){
+                 ans=ans+((int)Math.pow(2,i));
+             }
+             binary=binary/10;
+             i++;
+         }
+    System.out.println("Decimal representation of "+bin+" number is "+ans);
+}
+         public static void main(String args[]){
+             System.out.println("Enter the number :");
+             Scanner sc=new Scanner(System.in);
+             int num=sc.nextInt();
+             int n=num;
+             decimalrep( num, n);
+
+
+
+         }
+     }
+
+#### BUBBLE SORT CODE
+import java.util.Scanner;
+import java.lang.Math;
+ class Practice_set {
+     // Bubble sort
+         public static void main(String args[]){
+             int arr[]={7,8,3,1,2};
+             for(int i=0;i<arr.length-1;i++){
+                 for(int j=0;j<arr.length-i-1;j++){
+                     if(arr[j]>arr[j+1]){
+                         int temp=arr[j+1];
+                         arr[j+1]=arr[j];
+                         arr[j]=temp;
+                     }
+                 }
+             }
+             for(int i=0;i<arr.length;i++){
+                 System.out.print(arr[i]+" ");
+             }
+
+
+         }
+     }
+
+
+### SELECTION SORTING
+import java.util.Scanner;
+import java.lang.Math;
+ class Practice_set {
+     // Selection sort
+         public static void main(String args[]){
+             int arr[]={7,8,3,1,2};
+             for(int i=0;i<arr.length-1;i++){
+                 int smallest=i;
+                 for(int j=i+1;j<arr.length;j++){
+                     if(arr[smallest]>arr[j]){
+                         smallest=j;
+                     }
+                 }
+                 int temp=arr[smallest];
+                 arr[smallest]=arr[i];
+                 arr[i]=temp;
+             }
+             for(int i=0;i<arr.length;i++){
+                 System.out.print(arr[i]+" ");
+             }
+
+
+         }
+     }
+
+### INSERTION SORT:
+import java.util.Scanner;
+import java.lang.Math;
+ class Practice_set {
+     // INSERTION sort
+         public static void main(String args[]){
+             int arr[]={7,8,3,1,2};
+             for(int i=1;i<arr.length;i++){
+                 int current=arr[i];
+                 int j=i-1;
+                 while(j>=0&&current<arr[j]){
+                     arr[j+1]=arr[j];
+                     j--;
+                 }
+                 arr[j+1]=current;
+             }
+             for(int i=0;i<arr.length;i++){
+                 System.out.print(arr[i]+" ");
+             }
+
+
+         }
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+

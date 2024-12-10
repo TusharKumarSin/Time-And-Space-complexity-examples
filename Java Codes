@@ -494,6 +494,42 @@ import java.lang.Math;
      }
 
 
+### Even and odd power of number using recursion in Time complexity of O(logn):
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static double power(double n, int x) {
+        if (x == 0) {
+            return 1;  
+        }
+        if (x < 0) {
+            return 1 / power(n, -x); 
+        }
+        
+        
+        if (x % 2 == 0) {
+            return power(n,x/2)*power(n,x/2);
+        } else {
+            return power(n,x/2)*power(n,x/2) * n;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter the base number: ");
+        double n = sc.nextDouble();
+        
+        System.out.print("Enter the power: ");
+        int x = sc.nextInt();
+        
+        System.out.println(n + " to the power of " + x + " = " + power(n, x));
+        
+        sc.close();
+    }
+}
 
 
 
